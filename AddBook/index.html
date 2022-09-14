@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+  <title>Cadastro de Livros</title>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Adicionar Livros</h2>
+    <form id="book-form">
+      <div>
+        <label for="title">Titulo</label>
+        <input type="text" id="title" class="u-full-width">
+      </div>
+
+      <div>
+        <label for="author">Autor(a)</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+
+      <div>
+        <label for="isbn">Código</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+
+      <div>
+        <input type="submit" value="submit" class="u-full-width">
+      </div>
+    </form>
+
+    <hr>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Autor</th>
+          <th>Código</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"> </tbody>
+    </table>
+  </div>
+
+  <script src="appe6.js"></script>
+</body>
+</html>
